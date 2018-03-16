@@ -1,0 +1,6 @@
+hbase thrift start --infoport 9065 -p 9060
+
+
+pyspark --jars spark-streaming-kafka-assembly_2.10-1.6.2.jar
+
+spark-submit ---master yarn  --jars spark-streaming-kafka-assembly_2.10-1.6.2.jar realTime.py
